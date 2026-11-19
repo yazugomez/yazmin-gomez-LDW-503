@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Fascinante Mundo de los Gatos</title>
+  <style>
+    /* Variables de color y configuración general */
+    :root {
+      --color-primario: #e07a5f;
+      --color-secundario: #3d405b;
+      --color-fondo: #f4f1de;
+      --color-tarjeta: #ffffff;
+      --color-texto: #333333;
+      --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: var(--color-secundario);
+      color: #ffffff;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 5px solid var(--color-primario);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Contenedor principal */
+    .contenedor {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Cuadrícula de tarjetas */
+    .grid-caracteristicas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    /* Diseño de cada tarjeta */
+    .tarjeta {
+      background-color: var(--color-tarjeta);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--sombra);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tarjeta-contenido {
+      padding: 1.5rem;
+    }
+
+    .tarjeta-contenido h2 {
+      color: var(--color-secundario);
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--color-primario);
+      padding-left: 10px;
+    }
+
+    .tarjeta-contenido p {
+      font-size: 0.95rem;
+      color: #555555;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background-color: var(--color-secundario);
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐱 Características de los Gatos</h1>
+    <p>Descubre qué hace tan especiales y misteriosos a nuestros compañeros felinos.</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="grid-caracteristicas">
+      
+      <!-- Característica 1 -->
+      <article class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Gato mirando fijamente">
+        <div class="tarjeta-contenido">
+          <h2>Sentidos Agudos</h2>
+          <p>Los gatos poseen una visión nocturna excepcional, necesitando solo una sexta parte de la luz que requiere un humano. Además, su oído puede detectar frecuencias ultrasónicas emitidas por pequeños roedores.</p>
+        </div>
+      </article>
+
+      <!-- Característica 2 -->
+      <article class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80" alt="Gato estirándose con agilidad">
+        <div class="tarjeta-contenido">
+          <h2>Agilidad y Flexibilidad</h2>
+          <p>Gracias a una columna vertebral con más vértebras que la humana y a la ausencia de clavícula rígida, pueden girar en el aire y pasar por espacios muy estrechos con facilidad.</p>
+        </div>
+      </article>
+
+      <!-- Característica 3 -->
+      <article class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=600&q=80" alt="Gato durmiendo plácidamente">
+        <div class="tarjeta-contenido">
+          <h2>Maestros del Descanso</h2>
+          <p>Duermen entre 12 y 16 horas al día para conservar energía. Aunque parezcan profundamente dormidos, suelen mantener sus oídos alertas ante cualquier ruido del entorno.</p>
+        </div>
+      </article>
+
+      <!-- Característica 4 -->
+      <article class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=600&q=80" alt="Gato mostrando sus bigotes">
+        <div class="tarjeta-contenido">
+          <h2>Bigotes Sensoriales</h2>
+          <p>Sus vibrisas (bigotes) no son simples pelos; están conectadas a terminaciones nerviosas que les permiten medir distancias, detectar corrientes de aire y orientarse en la oscuridad.</p>
+        </div>
+      </article>
+
+      <!-- Característica 5 -->
+      <article class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=600&q=80" alt="Gato acicalándose">
+        <div class="tarjeta-contenido">
+          <h2>Higiene Impecable</h2>
+          <p>Dedican gran parte de su tiempo despierto a acicalarse. Su lengua tiene pequeñas espinas de queratina (papilas) que funcionan como un peine natural para limpiar su pelaje y regular su temperatura.</p>
+        </div>
+      </article>
+
+      <!-- Característica 6 -->
+      <article class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=600&q=80" alt="Gato relajado ronroneando">
+        <div class="tarjeta-contenido">
+          <h2>Comunicación y Ronroneo</h2>
+          <p>Se comunican mediante maullidos, lenguaje corporal y el ronroneo. Este último no solo expresa bienestar, sino que también les ayuda a calmarse y reducir el estrés.</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Página informativa sobre felinos &copy; 2026</p>
+  </footer>
+
+</body>
+</html>
